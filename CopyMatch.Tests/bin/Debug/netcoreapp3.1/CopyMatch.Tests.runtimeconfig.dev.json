@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Jurgis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Jurgis\\.nuget\\packages"
+    ]
+  }
+}

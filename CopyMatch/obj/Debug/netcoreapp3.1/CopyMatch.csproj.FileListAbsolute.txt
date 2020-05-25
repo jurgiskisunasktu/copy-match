@@ -1,0 +1,9 @@
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\bin\Debug\netcoreapp3.1\CopyMatch.deps.json
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\bin\Debug\netcoreapp3.1\CopyMatch.dll
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\bin\Debug\netcoreapp3.1\CopyMatch.pdb
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.csprojAssemblyReference.cache
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.csproj.CoreCompileInputs.cache
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.AssemblyInfoInputs.cache
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.AssemblyInfo.cs
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.dll
+C:\Users\Jurgis\OneDrive - Kaunas University of Technology\Magistrantura\T120M156 Komponentinis programų sistemų projektavimas\copy-match\CopyMatch\obj\Debug\netcoreapp3.1\CopyMatch.pdb
