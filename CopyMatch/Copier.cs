@@ -5,17 +5,19 @@ namespace CopyMatch
 {
     public class Copier
     {
-        public void Copy(object a, object b)
+        public void Copy(object source, object target)
         {
-            Type typeB = b.GetType();
-            foreach (PropertyInfo property in a.GetType().GetProperties())
+            //CopierSettings.Instance =
+
+            Type typeB = target.GetType();
+            foreach (PropertyInfo property in source.GetType().GetProperties())
             {
                 if (!property.CanRead || (property.GetIndexParameters().Length > 0))
                     continue;
 
                 PropertyInfo other = typeB.GetProperty(property.Name);
                 if ((other != null) && (other.CanWrite))
-                    other.SetValue(b, property.GetValue(a, null), null);
+                    other.SetValue(target, property.GetValue(source, null), null);
             }
         }
     }
