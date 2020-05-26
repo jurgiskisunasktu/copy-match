@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CopyMatch.NamingConventionsConverters
+﻿namespace CopyMatch.NamingConventionsConverters
 {
     public interface INamingConvention
     {

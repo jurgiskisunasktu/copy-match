@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-
-namespace CopyMatch.NamingConventionsConverters
+﻿namespace CopyMatch.NamingConventionsConverters
 {
     /// <summary>
-    /// snake_case
+    /// For the snake case conversion that looks like this: snake_case
     /// </summary>
     public class SnakeCase : INamingConvention
     {

@@ -7,8 +7,6 @@ namespace CopyMatch
     {
         public void Copy(object source, object target)
         {
-            //CopierSettings.Instance =
-
             Type typeB = target.GetType();
             foreach (PropertyInfo property in source.GetType().GetProperties())
             {

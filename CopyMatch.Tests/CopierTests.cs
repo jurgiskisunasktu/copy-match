@@ -1,7 +1,6 @@
 ﻿using System;
 using CopyMatch.Tests.DummyClasses;
 using Xunit;
-using Xunit.Extensions;
 
 namespace CopyMatch.Tests
 {

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CopyMatch.NamingConventionsConverters
+﻿namespace CopyMatch.NamingConventionsConverters
 {
     /// <summary>
-    /// kebab-case
+    /// For the kebab case conversion that looks like this: kebab-case
     /// </summary>
     public class KebabCase : INamingConvention
     {

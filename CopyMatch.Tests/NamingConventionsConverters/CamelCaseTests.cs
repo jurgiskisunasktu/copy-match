@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using CopyMatch.NamingConventionsConverters;
+﻿using CopyMatch.NamingConventionsConverters;
 using Xunit;
 
 namespace CopyMatch.Tests.NamingConventionsConverters

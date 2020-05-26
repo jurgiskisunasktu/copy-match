@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace CopyMatch
+﻿namespace CopyMatch
 {
     public class Singleton<T>
     where T : class, new()

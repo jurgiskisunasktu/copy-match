@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Text;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace CopyMatch.NamingConventionsConverters
 {
     /// <summary>
-    /// CamelCase
+    /// For the camel case conversion that looks like this: CamelCase
     /// </summary>
     public class CamelCase : INamingConvention
     {

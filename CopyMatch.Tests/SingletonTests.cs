@@ -1,6 +1,4 @@
-﻿using System.Dynamic;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading;
 using Xunit;
 
 namespace CopyMatch.Tests

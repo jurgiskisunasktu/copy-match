@@ -1,12 +1,7 @@
-﻿using System.ComponentModel;
-
-namespace CopyMatch
+﻿namespace CopyMatch
 {
     public class CopierSettings : Singleton<CopierSettings>
     {
-
-
-
         public CopierSettings() {}
     }
 }
