@@ -2,6 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Jurgis Kišūnas</Authors>
+    <Description>Component that simplifies data transactios between classes with the same parameters.</Description>
+    <Copyright>Jurgis Kišūnas</Copyright>
+    <Version>1.0.0</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/jurgiskisunasktu/copy-match</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jurgiskisunasktu/copy-match</RepositoryUrl>
+    <PackageTags>CopyMatch ClassCopy CopyClassParams CopyClassParameters CopyParameters MapParameters AutoMapParameters</PackageTags>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
