@@ -1,23 +1,31 @@
 ﻿namespace CopyMatch.NamingConventionsConverters
 {
-    public class NamingConventionConverter
+    public static class NamingConventionConverter
     {
-        private CamelCase camelCase;
-        private KebabCase kebabCase;
-        private SnakeCase snakeCase;
+        private static CamelCase camelCase = new CamelCase();
+        private static KebabCase kebabCase = new KebabCase();
+        private static SnakeCase snakeCase = new SnakeCase();
 
-        public NamingConventionConverter()
+        public static string ToCamelCase(this string normalText)
         {
-            camelCase = new CamelCase();
-            kebabCase = new KebabCase();
-            snakeCase = new SnakeCase();
+            return camelCase.StringToThis(normalText);
         }
 
-        public INamingConvention GetNamingConvention(string propertyName)
+        public static string ToSnakeCase(this string normalText)
         {
-            if (camelCase.IsTypeOfThis(propertyName)) return camelCase;
+            return snakeCase.StringToThis(normalText);
+        }
+
+        public static string ToKebabCase(this string normalText)
+        {
+            return kebabCase.StringToThis(normalText);
+        }
+
+        public static INamingConvention GetNamingConvention(string propertyName)
+        {
             if (kebabCase.IsTypeOfThis(propertyName)) return kebabCase;
             if (snakeCase.IsTypeOfThis(propertyName)) return snakeCase;
+            if (camelCase.IsTypeOfThis(propertyName)) return camelCase;
             return null;
         }
     }

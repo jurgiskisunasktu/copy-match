@@ -1,32 +1,32 @@
 ﻿namespace CopyMatch.Tests.DummyClasses
 {
-    public class DummyA
+    public class CamelCaseDummyB
     {
         public string DummyString { get; set; }
         public int DummyInt { get; set; }
         public double DummyDouble { get; set; }
         public DummyImage DummyImage { get; set; }
 
-        public string SpecificDummyA { get; set; }
+        public string SpecificDummyB { get; set; }
 
-        public DummyA()
+        public CamelCaseDummyB()
         {
             DummyImage = new DummyImage();
         }
 
         public void LoadDefaults()
         {
-            DummyString = "Class A Dummy";
+            DummyString = "Class B Dummy";
 
-            DummyInt = 111;
+            DummyInt = 222;
 
-            DummyDouble = 111111;
+            DummyDouble = 222222;
 
-            DummyImage.Height = 111;
-            DummyImage.Width = 111;
+            DummyImage.Height = 222;
+            DummyImage.Width = 222;
             DummyImage.Data = new byte[DummyImage.Height * DummyImage.Width];
 
-            SpecificDummyA = "String value that only DummyA class object should have";
+            SpecificDummyB = "String value that only DummyB class object should have";
         }
     }
 }

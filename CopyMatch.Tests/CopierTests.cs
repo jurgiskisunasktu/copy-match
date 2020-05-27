@@ -7,28 +7,78 @@ namespace CopyMatch.Tests
     public static class CopierTests
     {
         [Fact]
-        public static void CopyTest()
+        public static void NoConversionTest()
         {
-            DummyA dummyA = new DummyA();
-            dummyA.LoadDefaults();
+            CamelCaseDummyA camelCaseDummyA = new CamelCaseDummyA();
+            camelCaseDummyA.LoadDefaults();
 
-            DummyB dummyB = new DummyB();
+            CamelCaseDummyB camelCaseDummyB = new CamelCaseDummyB();
 
             Copier copier = new Copier();
-            copier.Copy(dummyA, dummyB);
+            copier.Copy(camelCaseDummyA, camelCaseDummyB);
 
 
-            Assert.True(dummyA.DummyString == dummyB.DummyString);
+            Assert.Equal(camelCaseDummyA.DummyString, camelCaseDummyB.DummyString);
 
-            Assert.True(dummyA.DummyInt == dummyB.DummyInt);
+            Assert.Equal(camelCaseDummyA.DummyInt, camelCaseDummyB.DummyInt);
 
-            Assert.True(Math.Abs(dummyA.DummyDouble - dummyB.DummyDouble) < 0.01);
+            Assert.Equal(camelCaseDummyA.DummyDouble, camelCaseDummyB.DummyDouble);
 
-            Assert.True(dummyA.DummyImage.Height == dummyB.DummyImage.Height);
-            Assert.True(dummyA.DummyImage.Width == dummyB.DummyImage.Width);
-            Assert.True(dummyA.DummyImage.Data == dummyB.DummyImage.Data);
+            Assert.Equal(camelCaseDummyA.DummyImage.Height, camelCaseDummyB.DummyImage.Height);
+            Assert.Equal(camelCaseDummyA.DummyImage.Width, camelCaseDummyB.DummyImage.Width);
+            Assert.Equal(camelCaseDummyA.DummyImage.Data, camelCaseDummyB.DummyImage.Data);
 
-            Assert.True(dummyA.SpecificDummyA != dummyB.SpecificDummyB);
+            Assert.NotEqual(camelCaseDummyA.SpecificDummyA, camelCaseDummyB.SpecificDummyB);
+        }
+
+        [Fact]
+        public static void CamelToSnakeTest()
+        {
+            CamelCaseDummyA camelCaseDummyA = new CamelCaseDummyA();
+            camelCaseDummyA.LoadDefaults();
+
+            SnakeCaseDummyB snakeCaseDummyB = new SnakeCaseDummyB();
+
+            Copier copier = new Copier();
+            copier.Copy(camelCaseDummyA, snakeCaseDummyB);
+
+
+            Assert.Equal(camelCaseDummyA.DummyString, snakeCaseDummyB.dummy_string);
+
+            Assert.Equal(camelCaseDummyA.DummyInt, snakeCaseDummyB.dummy_int);
+
+            Assert.Equal(camelCaseDummyA.DummyDouble, snakeCaseDummyB.dummy_double);
+
+            Assert.Equal(camelCaseDummyA.DummyImage.Height, snakeCaseDummyB.dummy_image.Height);
+            Assert.Equal(camelCaseDummyA.DummyImage.Width, snakeCaseDummyB.dummy_image.Width);
+            Assert.Equal(camelCaseDummyA.DummyImage.Data, snakeCaseDummyB.dummy_image.Data);
+
+            Assert.NotEqual(camelCaseDummyA.SpecificDummyA, snakeCaseDummyB.specific_dummy_b);
+        }
+
+        [Fact]
+        public static void SnakeToCamelTest()
+        {
+            SnakeCaseDummyA snakeCaseDummyA = new SnakeCaseDummyA();
+            snakeCaseDummyA.LoadDefaults();
+
+            CamelCaseDummyB camelCaseDummyB = new CamelCaseDummyB();
+
+            Copier copier = new Copier();
+            copier.Copy(snakeCaseDummyA, camelCaseDummyB);
+
+
+            Assert.Equal(snakeCaseDummyA.dummy_string, camelCaseDummyB.DummyString);
+
+            Assert.Equal(snakeCaseDummyA.dummy_int, camelCaseDummyB.DummyInt);
+
+            Assert.Equal(snakeCaseDummyA.dummy_double, camelCaseDummyB.DummyDouble);
+
+            Assert.Equal(snakeCaseDummyA.dummy_image.Height, camelCaseDummyB.DummyImage.Height);
+            Assert.Equal(snakeCaseDummyA.dummy_image.Width, camelCaseDummyB.DummyImage.Width);
+            Assert.Equal(snakeCaseDummyA.dummy_image.Data, camelCaseDummyB.DummyImage.Data);
+
+            Assert.NotEqual(snakeCaseDummyA.specific_dummy_a, camelCaseDummyB.SpecificDummyB);
         }
     }
 }

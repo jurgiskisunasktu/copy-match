@@ -9,24 +9,24 @@ namespace CopyMatch.Tests
         [Fact]
         public static void CopierHelperTest()
         {
-            DummyA dummyA = new DummyA();
-            dummyA.LoadDefaults();
+            CamelCaseDummyA camelCaseDummyA = new CamelCaseDummyA();
+            camelCaseDummyA.LoadDefaults();
 
-            DummyB dummyB = new DummyB();
+            CamelCaseDummyB camelCaseDummyB = new CamelCaseDummyB();
 
-            dummyB.CopyToOtherClass(dummyA);
+            camelCaseDummyB.CopyToOtherClass(camelCaseDummyA);
 
-            Assert.True(dummyA.DummyString == dummyB.DummyString);
+            Assert.True(camelCaseDummyA.DummyString == camelCaseDummyB.DummyString);
 
-            Assert.True(dummyA.DummyInt == dummyB.DummyInt);
+            Assert.True(camelCaseDummyA.DummyInt == camelCaseDummyB.DummyInt);
 
-            Assert.True(Math.Abs(dummyA.DummyDouble - dummyB.DummyDouble) < 0.01);
+            Assert.True(Math.Abs(camelCaseDummyA.DummyDouble - camelCaseDummyB.DummyDouble) < 0.01);
 
-            Assert.True(dummyA.DummyImage.Height == dummyB.DummyImage.Height);
-            Assert.True(dummyA.DummyImage.Width == dummyB.DummyImage.Width);
-            Assert.True(dummyA.DummyImage.Data == dummyB.DummyImage.Data);
+            Assert.True(camelCaseDummyA.DummyImage.Height == camelCaseDummyB.DummyImage.Height);
+            Assert.True(camelCaseDummyA.DummyImage.Width == camelCaseDummyB.DummyImage.Width);
+            Assert.True(camelCaseDummyA.DummyImage.Data == camelCaseDummyB.DummyImage.Data);
 
-            Assert.True(dummyA.SpecificDummyA != dummyB.SpecificDummyB);
+            Assert.True(camelCaseDummyA.SpecificDummyA != camelCaseDummyB.SpecificDummyB);
         }
     }
 }
