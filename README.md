@@ -4,16 +4,12 @@
 
 > Component for data transfers between different classes with same parameters and different naming conventions availability.
 
----
-
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [License](#license)
-
----
 
 ## Installation
 
@@ -73,8 +69,6 @@ CopierSettings.Instance.CamelCaseToKebabCaseConvertionEnabled = true;
 CopierSettings.Instance.SnakeCaseToCamelCaseConvertionEnabled = true;
 CopierSettings.Instance.SnakeCaseToKebabCaseConvertionEnabled = true;
 ```
-
----
 
 ## License
 
